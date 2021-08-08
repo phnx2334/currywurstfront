@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>cooks-list</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+        <link rel="stylesheet" href="style.css" type="text/css" media=screen>
+    </head>
+    <body>
+        <div class="cooks-list-panel">
+            <div class="cooks-list-yellow-frame">
+                <h2>Cook's list</h2>
+                <div class="cooks-list-yellow-tag">
+                    <p>Spots available: </p>
+                    <p id="number-of-open-spots-for-cooks"></p>
+                </div>
+                <hr class="green-line">
+                <div class="cooks-list-grid">
+                    <div class="cooks-list-grid-titles">
+                        <p class="cook-number-title">n.</p>
+                        <p class="cook-name-title">Name</p>
+                    </div>
+                    <div class="cook-info">
+                        <p class="cook-number">1.</p>
+                        <p class="cook-name" id="cook1name">Anna</p>
+                        <button class="cook-edit">Edit</button> <!-- onClick={() => onClickModify()} -->
+                        <button class="cook-delete">Delete</button> <!-- onClick={() => props.delete(props.id)} -->
+                    </div>
+                    <div class="cook-info">
+                        <p class="cook-number">2.</p>
+                        <p class="cook-name" id="cook1name">Karenina</p>
+                        <button class="cook-edit">Edit</button> <!-- onClick={() => onClickModify()} -->
+                        <button class="cook-delete">Delete</button> <!-- onClick={() => props.delete(props.id)} -->
+                    </div>
+                    <div class="cook-info">
+                        <p class="cook-number">3.</p>
+                        <p class="cook-name" id="cook1name">Hans</p>
+                        <button class="cook-edit">Edit</button> <!-- onClick={() => onClickModify()} -->
+                        <button class="cook-delete">Delete</button> <!-- onClick={() => props.delete(props.id)} -->
+                    </div>
+                    <div class="cook-info">
+                        <p class="cook-number">4.</p>
+                        <p class="cook-name" id="cook1name">Regina</p>
+                        <button class="cook-edit">Edit</button> <!-- onClick={() => onClickModify()} -->
+                        <button class="cook-delete">Delete</button> <!-- onClick={() => props.delete(props.id)} -->
+                    </div>
+                    <div class="cook-info">
+                        <p class="cook-number">5.</p>
+                        <p class="cook-name" id="cook1name">Martha</p>
+                        <button class="cook-edit">Edit</button> <!-- onClick={() => onClickModify()} -->
+                        <button class="cook-delete">Delete</button> <!-- onClick={() => props.delete(props.id)} -->
+                    </div>
+                </div>         
+            </div>
+        </div>
+    </body>
+</html>

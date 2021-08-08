@@ -1,0 +1,16 @@
+li {
+  padding: 10px;
+  font-family: Cabin, Calibri, sans-serif;
+  font-size: 15pt;
+  text-decoration: none;
+  color: #f4f1de; 
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: #3d405b;
+  color: white;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>view-recipe</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+    <link rel="stylesheet" href="style.css" type="text/css" media=screen>
+    <script src="https://kit.fontawesome.com/a030ca3027.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+    <div class="view-recipe-panel">
+        <div class="view-recipe-yellow-frame">
+            <h2>View recipe</h2>
+            <hr class="view-recipe-green-line">
+            <p class="view-recipe-intructions">See and edit recipe’s title, details and ingredients and then save changes clicking “save recipe”.</p>
+            <div class="view-recipe-form-header">
+                <input id="recipeName" type="text" placeholder="Dish name"></input>  <!-- onChange={(e) => onRecipeFieldUpdate(e,'name')} -->
+                <span class="view-recipe-panel-icon time-icon"><i class="far fa-clock"></i></span>
+                <input id="ttc" type="number" placeholder="Minutes to cook/serve"></input>  <!-- onChange={(e) =>onRecipeFieldUpdate(e,'ttc')} -->
+                <span class="view-recipe-panel-icon euro-icon"><i class="fas fa-euro-sign"></i></span>
+                <input id="price" type="number" placeholder="Dish price"}></input>  <!-- onChange={(e) =>onRecipeFieldUpdate(e,'price') -->             
+                <select id="preMade" name="preMade">  <!-- onChange={(e) =>onRecipeFieldUpdate(e,'madeProduct')} -->
+                    <option value="default">Is it a pre-made product?</option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+                <select id="productType" name="productType">  <!-- onChange={(e) =>onRecipeFieldUpdate(e,'type')} -->
+                    <option value="default">Select dish type</option>
+                    <option value="Main Dish">Main Dish</option>
+                    <option value="Dessert">Dessert</option>
+                    <option value="Drink">Drink</option>
+                </select>
+                <hr class="view-recipe-yellow-line">
+            </div>
+            <div class="view-recipe-form-body">
+                <h3>Dish ingredients are...</h3>
+                <p>(This part will be empty if you are viewing a pre-made dish)</p>
+                <input id="ingredientQty" type="text" placeholder="Qty."></input>
+                <input id="ingredientName" type="text" placeholder="Ingredient name"></input>
+                <button class="edit-ingredient-button"><span class="view-recipe-panel-icon"><i class="fas fa-check"></i></span></button>  <!-- onClick={() => onAddIngredientClickHandler()} -->
+                <!-- {renderIngredientsList()} -->
+            </div>
+            <div class="view-recipe-form-footer">
+                <button class="close-recipe-button">Save recipe</menu></button> <!-- onClick={()=>onAddRecipeClickHandler()} -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

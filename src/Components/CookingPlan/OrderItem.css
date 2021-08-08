@@ -1,0 +1,147 @@
+* {
+    font-family: Cabin, Calibri, sans-serif;
+    font-size: 7pt;
+}
+
+/*Sections and dividers*/
+.green-background-container {
+    width: 340px;
+    height: 450px;
+    padding: 5px;
+    margin-top: 18px;
+    background-color: #81b29a;
+}
+
+.green-background {
+    width: 340px;
+    height: 450px;
+    padding: 0px;
+    background-color: #81b29a;
+}
+
+.orders-list {
+    width: 340px;
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.orderContainer {
+    display: flex;
+    flex-direction: row;
+    width: 290px;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f4f1de;
+}
+
+span {
+    display: inline;
+}
+
+.order-content {
+    width: 100%;
+    color: #81b29a;
+}
+
+.order-item {
+    display: flex;
+    width: 100%;
+    height: 12px;
+    flex-direction: row;
+}
+
+.order-item p {
+    display: inline;
+    margin: 0px;
+}
+
+p.order-item-quantity {
+    width: 7%;
+}
+p.order-item-name {
+    width: 70%;
+}
+p.order-item-price {
+    width: 20%;
+    text-align: right;
+}
+
+.yellow-line {
+    grid-column-start: 2;
+    height: 0px;
+    border: 0.5pt #f2cc8f solid;
+    background-color: #f2cc8f;
+}
+
+.line-1 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.line-2 {
+    margin-top: 8px;
+}
+
+h4 {
+    display: inline;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #3d405b;
+}
+
+.order-item p {
+    display: inline;
+    margin: 0px;
+}
+
+.order-item-coin {
+    margin-left: 5px !important;
+    font-size: 6pt;
+}
+
+.order-details {
+    padding: 10px;
+    border-radius: 0px 6px 6px 0px;
+    background-color: #ffffff;
+    color: #3d405b;
+}
+
+.total {
+    grid-column: -1;
+}
+
+.order-details p {
+    margin: 0px;
+}
+
+.statement {
+    margin-top: 5px !important;
+}
+
+.coin, .total-price, .hours {
+    display: inline;
+}
+
+.order-detail-bold {
+    font-weight: bold;
+}
+
+/*Y scroll bar*/
+.orders-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.orders-list::-webkit-scrollbar:increment, .orders-list::-webkit-scrollbar:decrement {
+    display: none;
+}
+
+.orders-list::-webkit-scrollbar-thumb {
+    background-color: #3d405b;
+    border-radius: 20px;
+}
+
+.orders-list::-webkit-scrollbar-track {
+    background-color: #f4f1de;
+    border-radius: 10px;
+}

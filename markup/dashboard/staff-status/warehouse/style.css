@@ -1,0 +1,262 @@
+body {
+    margin: 0px;
+    font-family: Cabin, Calibri, sans-serif;
+    font-size: 8pt;
+}
+
+.warehouse-header {
+    width: 265px;
+    height: 30px;
+    padding: 20px 20px 0px 20px;
+    background-color: #f2cc8f;
+}
+
+.warehouse-header h3 {
+    display: inline;
+    font-size: 10pt;
+    color: #3d405b;
+}
+
+.warehouse-white-highlight {
+    display: inline;
+    margin-left: 5px;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+.warehouse-white-highlight p {
+    display: inline;
+    font-size: 7pt;
+    color: #3d405b;
+}
+
+.warehouse-grid {
+    display: grid;
+    grid-template-columns: repeat(13, 23.5px);
+    grid-template-rows: 10px repeat(10, 10px) 13.5px 30px;
+    grid-gap: 0px;
+    width: 305px;
+    height: 150px;
+    margin: 0px;
+    background-color: #f2cc8f;
+}
+
+/*Shelfs' display*/
+.shelf {
+    display: block;
+    grid-row-end: 13;
+    background-color: #f4f1de;
+}
+
+.sh1 {
+    grid-column: 2/3;
+    grid-row: 2/13;
+}
+
+.sh2 {
+    grid-column: 2/13;
+    grid-row: 11/13;
+}
+
+.sh3 {
+    grid-column: 12/13;
+    grid-row: 2/13;
+}
+
+/*Workers' display*/
+.worker {
+    display: block;
+    margin-left: -4px;
+    font-size: 12pt;
+    color: #848bb7;
+}
+
+/*Workers' rows assignation*/
+#worker1, #worker2, #worker3, #worker4, #worker5, #worker6, #worker7, #worker8 {
+    grid-row: 2;
+}
+
+#worker9, #worker10, #worker11, #worker12, #worker13, #worker14, #worker15, #worker16 {
+    grid-row: 5;
+}
+
+#worker17, #worker18, #worker19, #worker20, #worker21, #worker22, #worker23, #worker24 {
+    grid-row: 8;
+}
+
+/*Workers' columns assignation*/
+#worker1, #worker9, #worker17 {
+    grid-column: 4;
+}
+
+#worker2, #worker10, #worker18 {
+    grid-column: 5;
+}
+
+#worker3, #worker11, #worker19 {
+    grid-column: 6;
+}
+
+#worker4, #worker12, #worker20 {
+    grid-column: 7;
+}
+
+#worker5, #worker13, #worker21 {
+    grid-column: 8;
+}
+
+#worker6, #worker14, #worker22 {
+    grid-column: 9;
+}
+
+#worker7, #worker15, #worker23 {
+    grid-column: 10;
+}
+
+#worker8, #worker16, #worker24 {
+    grid-column: 11;
+}
+
+/*Text containers' features according to status*/
+div.busy {
+    z-index: 1000;
+    grid-area: 2/4;
+    width: 140px;
+    height: 54px;
+    padding: 0px;
+    border-radius: 2px;
+    background-color: #e76f51;
+    color: #f4f1de;
+}
+
+div.available {
+    z-index: 1000;
+    grid-area: 2/4;
+    width: 120px;
+    height: 40px;
+    padding: 0px;
+    border-radius: 2px;
+    background-color: #81b29a;
+    color: #f4f1de;
+}
+
+div.empty {
+    z-index: 1000;
+    grid-area: 2/4;
+    width: 120px;
+    height: 40px;
+    padding: 0px;
+    border-radius: 2px;
+    background-color: #f4f1de;
+    color: #3d405b;
+}
+
+p.busy, p.available, p.empty {
+    margin: 6px;
+}
+
+/*status container's column assignation - PARA CORREGIR*/
+#cook1status, #cook2status, #cook3status, #cook4status, #cook5status {
+    grid-column-start: 4;
+}
+
+#cook6status, #cook7status, #cook8status, #cook9status, #cook10status {
+    grid-column-start: 6;
+}
+
+#cook11status, #cook12status, #cook13status, #cook14status, #cook15status {
+    grid-column-start: 8;
+}
+
+#cook16status, #cook17status, #cook18status, #cook19status, #cook20status {
+    grid-column-start: 10;
+}
+
+#cook21status, #cook22status, #cook23status, #cook24status, #cook25status {
+    grid-column-start: 12;
+}
+
+#cook26status, #cook27status, #cook28status, #cook29status, #cook30status {
+    grid-column-start: 14;
+}
+
+#cook31status, #cook32status, #cook33status, #cook34status, #cook35status {
+    grid-column-start: 16;
+}
+
+#cook36status, #cook37status, #cook38status, #cook39status, #cook40status {
+    grid-column-end: 17;
+}
+
+/*Status container rows assignation - PARA CORREGIR*/
+#cook1status, #cook6status, #cook11status, #cook16status, #cook21status, #cook2status, #cook31status, #cook36status {
+    grid-row-start: 2;
+}
+
+#cook2status, #cook7status, #cook12status, #cook17status, #cook22status, #cook27status, #cook32status, #cook37status {
+    grid-row-start: 4;
+}
+
+#cook3status, #cook8status, #cook13status, #cook18status, #cook23status, #cook28status, #cook33status, #cook38status {
+    grid-row-start: 6;
+}
+
+#cook4status, #cook9status, #cook14status, #cook19status, #cook24status, #cook29status, #cook34status, #cook39status {
+    grid-row-start: 8;
+}
+
+#cook5status, #cook10status, #cook15status, #cook20status, #cook25status, #cook30status, #cook35status, #cook40status {
+    grid-row-start: 10;
+}
+
+/*Hover*/
+span.worker:hover {
+    -webkit-text-stroke: 1px #f4f1de;
+}
+
+span.busy:hover {
+    color: #e76f51;
+}
+
+span.available:hover {
+    color: #7ac943;
+}
+
+span.empty:hover {
+    color: #f4f1de;
+}
+
+
+
+
+
+
+
+h3 {
+    display: inline;
+    font-size: 11pt;
+    font-weight: bold; 
+    color: #3d405b;
+}
+
+.yellow-tag {
+    display: inline;
+    margin-left: 10px;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: #f2cc8f;
+    color: #3d405b;
+}
+
+.a-cooks-text, .a-workers-text {
+    display: inline;
+    font-size: 8pt;
+    color: #3d405b;
+}
+
+.a-cooks-number, .a-workers-number  {
+    display: inline;
+    font-weight: bold;
+    color: #3d405b;
+}

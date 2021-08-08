@@ -1,0 +1,166 @@
+* {
+    font-family: Cabin, Calibri, sans-serif;
+    font-size: 7pt;
+}
+
+.view-recipe-panel {
+    width: 355px;
+    height: 560px;
+    border: 3pt solid #3d405b;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.view-recipe-yellow-frame {
+    width: 302px;
+    height: 496px;
+    margin: 14px;
+    padding: 20px 10px 10px 10px;
+    border: 2pt solid #f2cc8f;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.view-recipe-yellow-frame h2 {
+    display: inline;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #3d405b;
+}
+
+.view-recipe-intructions {
+    display: block;
+    margin: 15px;
+    font-size: 7pt;
+    color: #3d405b;
+}
+
+.view-recipe-green-line {
+    border: 0.5pt solid #81b29a;
+    background-color: #81b29a
+}
+
+/*Form header*/
+.view-recipe-form-header {
+    display: grid;
+    grid-template-columns: 15px 115px;
+    grid-template-rows: repeat(3, 18px);
+    row-gap: 5px;
+    width: 280px;
+    margin: 0;
+    padding: 10px;
+    background-color: #f4f1de;
+} 
+
+.view-recipe-yellow-line {
+    grid-column: 1/5;
+    width: 100%;
+    border: 0.5pt solid #f2cc8f;
+    background-color: #f2cc8f;
+}
+
+.view-recipe-panel-icon {
+    color: #f2cc8f;
+}
+
+/*Inputs*/
+#recipeName {
+    grid-column: 1/5;
+    grid-row: 1;
+    font-size: 8pt;
+}
+
+.time-icon {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    align-self: center;
+}
+
+#ttc {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.euro-icon {
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    align-self: center;
+}
+
+#price {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#preMade {
+    margin-left: 5px;
+    grid-column: 3/5;
+    grid-row: 2;
+}
+
+#productType{
+    margin-left: 5px;
+    grid-column: 3/5;
+    grid-row: 3;
+}
+
+/*Form body*/
+.view-recipe-form-body {
+    width: 280px;
+    height: auto;
+    margin: 0;
+    padding: 1px 10px 10px 10px;
+    background-color: #f4f1de;
+} 
+
+.view-recipe-form-header input, .view-recipe-form-header select, .view-recipe-form-body input {
+    border: none;
+    padding: 3px;
+    box-shadow: none;
+    background-color: #ffffff;
+    font-size: 7pt;
+    color: #808080;
+}
+
+.view-recipe-form-body h3, .view-recipe-form-body p {
+    margin: 0;
+    color: #3d405b;
+}
+
+#ingredientQty {
+    display: inline-flex;
+    width: 10%;
+}
+
+#ingredientName {
+    display: inline-flex;
+    width: 70%;
+}
+
+.view-recipe-form-body p {
+    margin-bottom: 10px;
+}
+
+.add-ingredient-button {
+    border: 0;
+    background-color: #3d405b;
+    color: #81b29a;
+}
+
+.view-recipe-form-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.close-recipe-button {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 0;
+    background-color: #3d405b;
+    color: #f4f1de;
+}

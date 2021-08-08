@@ -1,0 +1,131 @@
+* {
+    font-family: Cabin, Calibri, sans-serif;
+    font-size: 7pt;
+}
+
+.cooks-list-panel {
+    width: 450px;
+    height: 335px;
+    margin: 0px;
+    border: 3pt solid #3d405f;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.cooks-list-yellow-frame {
+    width: 400px;
+    height: 285px;
+    margin: 12px;
+    padding: 10px;
+    border: 2pt solid #f2cc8f;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.cooks-list-yellow-frame h2 {
+    display: inline;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #3d405b;
+}
+
+.cooks-list-yellow-tag {
+    display: inline-block;
+    width: 80px;
+    height: 18px;
+    margin-left: 8px;
+    border-radius: 2px;
+    background-color: #f2cc8f;
+}
+
+.cook-number-title, .cook-name-title {
+    font-weight: bold;
+    letter-spacing: 0.25pt;
+}
+
+.cooks-list-yellow-tag p {
+    display: inline-block;
+    margin: 4px;
+    font-size: 7pt;
+    color: #3d405b;
+}
+
+.cooks-list-yellow-frame hr {
+    margin-top: 8px;
+    border: 0.5pt solid #81b29a;
+    background-color: #81b29a
+}
+
+.cooks-list-grid {
+    margin: 10px;
+    padding: 0px;
+}
+
+.cooks-list-grid p {
+    display: inline;
+    margin: 0;
+}
+
+.cooks-list-grid button {
+    display: inline;
+    width: fit-content;
+    height: 12px;
+    margin: 0px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #f4f1de;
+    font-size: 7pt; 
+    color: #3d405b;
+}
+
+/*Titles*/
+.cooks-list-grid-titles {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    flex-direction: row;
+}
+
+.cook-number-title {
+    width: 5%;
+}
+
+.cook-name-title {
+    width: 95%;
+}
+
+/*Information*/
+.cook-info {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    flex-direction: row;
+}
+
+p.cook-number {
+    width: 5%;
+}
+p.cook-name {
+    width: 70%;
+}
+
+button.cook-edit {
+    width: 9%;
+    text-align: center;
+}
+
+button.cook-delete {
+    width: 12%;
+    margin-left: 4%;
+    text-align: center;
+}
+
+.cooks-list-grid p, .cooks-list-grid button {
+    align-self: center;
+}
+
+.cook-info:nth-child(odd) {
+    background-color: #f4f4f4;
+}

@@ -1,0 +1,85 @@
+<style>
+	section.recipe-list {
+		width: 100%;
+		background: white;
+		padding: 2%;
+	}
+	.list-container {
+		padding: 2%;
+		border: #f2cc8f 4px solid;
+		border-radius: 25px;
+	}
+	.list-container h1 {
+		display: inline-block;
+	}
+	.available-items {
+		background: #f2cc8f;
+		display: inline-block;
+		padding: 5px 10px;
+		border-radius: 10px;
+		margin-left: 20px;
+	}
+	.available-items p {
+		margin: 0;
+		padding: 5px;
+	}
+	.list-items {
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		align-items: center;
+	}
+	.list-items p:nth-child(1) {
+		width: 5%;
+	}
+	.list-items p:nth-child(2) {
+		width: 80%;
+	}
+	.buttons-list-items {
+		display: flex;
+		flex-direction: row;
+		width: 30%;
+		justify-content: flex-end;
+	}
+	.buttons-list-items a {
+		background: #f4f1de;
+		padding: 5px 10px;
+		border-radius: 10px;
+		box-shadow: 3px 3px 20px #0000001f;
+	}
+	.buttons-list-items a:nth-child(2) {
+		margin-left: 2%;
+	}
+	.recipe-list-wrapper:nth-child(odd) {
+		background-color: #f4f4f4;
+	}
+</style>
+<section class="recipe-list">
+	<div class="list-container">
+		<h1>Recipes's List</h1>
+		<div class="available-items">
+			<p>Spots Available: 20</p>
+		</div>
+		<hr>
+		<div class="recipe-list-wrapper">
+			<div class="list-items">
+				<p>1.</p>
+				<p>Name</p>
+				<div class="buttons-list-items">
+					<a>view details/edit</a>
+					<a>delete</a>
+				</div>
+			</div>
+		</div>
+		<div class="recipe-list-wrapper">
+			<div class="list-items">
+				<p>1.</p>
+				<p>Name</p>
+				<div class="buttons-list-items">
+					<a>view details/edit</a>
+					<a>delete</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

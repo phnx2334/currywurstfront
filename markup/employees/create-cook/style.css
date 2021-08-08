@@ -1,0 +1,67 @@
+* {
+    font-family: Cabin, Calibri, sans-serif;
+    font-size: 7pt;
+}
+
+.create-new-cook-panel {
+    display: grid;
+    grid-template-columns: 15px 120px 20px 180px 100px 15px;
+    grid-template-rows: 15px 28px 15px;
+    width: 454px;
+    height: 58px;
+    border: 1pt solid #3d405f;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.create-new-cook-panel h2 {
+    display: inline;
+    grid-column: 2;
+    grid-row: 2;
+    margin: 1px 0 0 0;
+    font-weight: bold;
+    letter-spacing: 0.35pt;
+    font-size: 11pt;
+    color: #3d405f;
+}
+
+.create-new-cook-panel img {
+    display: inline;
+    grid-column: 3;
+    grid-row: 2;
+    height: 20px;
+}
+
+.create-new-cook-panel input {
+    display: inline;
+    grid-column: 4/5;
+    grid-row: 2;
+    height: 15px;
+    margin-left: 12px;
+    padding: 5px;
+    border: none;
+    background-color: #f4f1de;
+    font-size: 7pt;
+    color: #808080;
+}
+
+#add-cook {
+    display: inline;
+    grid-column: 5/6;
+    grid-row: 2;
+    height: 20px; 
+    margin: 2px 0 0 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #e07a5f;
+    font-size: 8pt; 
+    color: #f4f1de; 
+}
+
+#add-cook:hover {
+    background-color: #3d405b;
+    color: #ffffff;
+    letter-spacing: 0.1pt;
+    font-weight: 500;
+}

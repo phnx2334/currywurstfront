@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>workers-list</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+        <link rel="stylesheet" href="style.css" type="text/css" media=screen>
+    </head>
+    <body>
+
+        <div class="workers-list-panel">
+            <div class="workers-list-yellow-frame">
+                <h2>Worker's list</h2>
+                <div class="workers-list-yellow-tag">
+                    <p>Spots available: </p>
+                    <p id="number-of-open-spots-for-workers"></p>
+                </div>
+                <hr class="green-line">
+                <div class="workers-list-grid">
+                    <div class="worker-list-grid-titles">
+                        <p class="worker-number-title">n.</p>
+                        <p class="worker-name-title">Name</p>
+                        <p class="worker-capacity-title">Cap.</p>
+                    </div>
+                    <div class="worker-info">
+                        <p class="worker-number">1.</p>
+                        <p class="worker-name" id="worker1name">Anna</p>
+                        <p class="worker-capacity" id="worker1capacity">5</p>
+                        <button class="worker-edit">Edit</button> <!-- onClick={() => onClickModify()} -->
+                        <button class="worker-delete">Delete</button> <!-- onClick={() => props.delete(props.id)} -->
+                    </div>
+                    <div class="worker-info">
+                        <p class="worker-number">2.</p>
+                        <p class="worker-name" id="worker1name">Karenina</p>
+                        <p class="worker-capacity" id="worker2capacity">5</p>
+                        <button class="worker-edit">Edit</button> <!-- onClick={() => onClickModify()} -->
+                        <button class="worker-delete">Delete</button> <!-- onClick={() => props.delete(props.id)} -->
+                    </div>                
+                    <div class="worker-info">
+                        <p class="worker-number">3.</p>
+                        <p class="worker-name" id="worker1name">Kari</p>
+                        <p class="worker-capacity" id="worker3capacity">5</p>
+                        <button class="worker-edit">Edit</button> <!-- onClick={() => onClickModify()} -->
+                        <button class="worker-delete">Delete</button> <!-- onClick={() => props.delete(props.id)} -->
+                    </div>                
+                    <div class="worker-info">
+                        <p class="worker-number">4.</p>
+                        <p class="worker-name" id="worker1name">Harold</p>
+                        <p class="worker-capacity" id="worker4capacity">5</p>
+                        <button class="worker-edit">Edit</button> <!-- onClick={() => onClickModify()} -->
+                        <button class="worker-delete">Delete</button> <!-- onClick={() => props.delete(props.id)} -->
+                    </div>                
+                    <div class="worker-info">
+                        <p class="worker-number">5.</p>
+                        <p class="worker-name" id="worker1name">Hans</p>
+                        <p class="worker-capacity" id="worker5capacity">5</p>
+                        <button class="worker-edit">Edit</button> <!-- onClick={() => onClickModify()} -->
+                        <button class="worker-delete">Delete</button> <!-- onClick={() => props.delete(props.id)} -->
+                    </div>          
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

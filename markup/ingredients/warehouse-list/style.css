@@ -1,0 +1,120 @@
+* {
+    font-family: Cabin, Calibri, sans-serif;
+    font-size: 7pt;
+}
+
+.wi-list-panel {
+    width: 500px;
+    height: 385px;
+    margin: 0px;
+    border: 3pt solid #3d405f;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.wi-list-yellow-frame {
+    width: 450px;
+    height: 335px;
+    margin: 12px;
+    padding: 10px;
+    border: 2pt solid #f2cc8f;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.wi-list-yellow-frame h2 {
+    display: inline;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #3d405b;
+}
+
+.wi-list-yellow-frame hr {
+    margin-top: 8px;
+    border: 0.5pt solid #81b29a;
+    background-color: #81b29a
+}
+
+.wi-list-grid {
+    width: 420px;
+    height: 234px;
+    margin: 10px;
+    padding: 0px;
+}
+
+.wi-list-grid-titles p {
+    font-weight: bold;
+    letter-spacing: 0.25pt;
+}
+
+.wi-list-grid p {
+    margin: 0;
+    color: #3d405b
+}
+
+.wi-list-grid button {
+    display: inline;
+    width: fit-content;
+    height: 12px;
+    margin: 0px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: #f4f1de;
+    font-size: 7pt; 
+    color: #3d405b;
+}
+
+/*Titles*/
+.wi-list-grid-titles {
+    display: flex;
+    margin-left: 2%;
+    width: 100%;
+    height: 20px;
+    flex-direction: row;
+}
+
+.wi-list-name-title {
+    width: 50%;
+}
+
+.wi-list-capacity-title {
+    width: 50%;
+}
+
+/*Information*/
+.wi-list-info {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    flex-direction: row;
+}
+
+p.wi-list-name {
+    margin-left: 2%;
+    width: 50%;
+}
+
+p.wi-list-capacity {
+    width: 22%;
+}
+
+button.wi-list-edit {
+    width: 9%;
+    text-align: center;
+}
+
+button.wi-list-delete {
+    width: 12%;
+    margin-left: 4%;
+    text-align: center;
+}
+
+.wi-list-grid p, .wi-list-grid button {
+    align-self: center;
+}
+
+.wi-list-info:nth-child(odd) {
+    background-color: #f4f4f4;
+}

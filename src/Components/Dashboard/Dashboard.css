@@ -1,0 +1,53 @@
+.purple-background {
+    display: grid;
+    grid-template-columns: 20px 160px 430px 430px 430px 20px;
+    grid-template-rows: 20px 570px 20px;
+    margin: 30px;
+    border-radius: 12px;
+    background-color: #3d405b;
+}
+
+.dashboard-section-header {
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.dashboard-section-header img {
+    display: inline;
+    margin: 4px 2px 2px 2px;
+    height: 30px;
+}
+
+.dashboard-section-header div {
+    display: inline-flex;
+    margin-left: 8px;
+    padding: 8px;
+    border-radius: 6px;
+    width: fit-content;
+    height: 20px;
+    background-color: #e07a5f;
+}
+
+.dashboard-section-header h1 {
+    margin: 0px;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.all-workers-status {
+    grid-column: 3;
+    grid-row-start: 2;
+}
+
+.all-cooking-plan {
+    grid-column: 4;
+    grid-row-start: 2;
+}
+
+.all-orders {
+    grid-column: 5;
+    grid-row-start: 2;
+}

@@ -1,0 +1,350 @@
+* {
+    font-family: Cabin, Calibri, sans-serif;
+    font-size: 7pt;
+}
+
+/*Header*/
+.ingredients-panel-section-header {
+    display: grid;
+    grid-template-columns: 20px 36px auto;
+    grid-template-rows: 20px 30px 10px;
+    width: 90vw;
+    margin: 3vw 0 0 5vw;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #3d405f;
+}
+
+.ingredients-panel-section-header img {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 2px;
+    height: 30px;
+}
+ 
+.ingredients-panel-section-header div {
+    grid-column: 3;
+    grid-row: 2;
+    margin-left: 8px;
+    padding: 8px;
+    border-radius: 6px;
+    width: 80px;
+    height: 20px;
+    background-color: #e07a5f;
+}
+
+.ingredients-panel-section-header h1 {
+    margin: 0px;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/*Panel*/
+.ingredients-panel-section-background {
+    display: grid;
+    grid-template-columns: 4vw 38vw 2vw 38vw 4vw;
+    grid-template-rows: 2vw auto;
+    width: 90vw;
+    height: 70vh;
+    margin-left: 5vw;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #3d405f;
+}
+
+/*KITCHEN INGREDIENTS*/
+.ki-list-panel {
+    grid-column: 2;
+    grid-row: 2;
+    width: 520px;
+    height: 450px;
+    margin: 0px;
+    border: 3pt solid #3d405f;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.ki-list-yellow-frame {
+    width: 470px;
+    height: 400px;
+    margin: 12px;
+    padding: 10px;
+    border: 2pt solid #f2cc8f;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.ki-list-yellow-frame h2 {
+    display: inline;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #3d405b;
+}
+
+.ki-list-yellow-frame hr {
+    margin-top: 8px;
+    border: 0.5pt solid #81b29a;
+    background-color: #81b29a
+}
+
+.ki-list-grid {
+    width: 460px;
+    height: 350px;
+    margin: 10px;
+    padding: 0px;
+    overflow-y: scroll;
+}
+
+.ki-list-grid-titles p {
+    font-weight: bold;
+    letter-spacing: 0.25pt;
+}
+
+.ki-list-grid p {
+    margin: 0;
+    color: #3d405b
+}
+
+.ki-list-grid button {
+    display: inline;
+    width: fit-content;
+    height: 12px;
+    margin: 0px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: #f4f1de;
+    font-size: 7pt; 
+    color: #3d405b;
+}
+
+/*Titles*/
+.ki-list-grid-titles {
+    display: flex;
+    margin-left: 2%;
+    width: 98%;
+    height: 20px;
+    flex-direction: row;
+}
+
+.ki-list-name-title {
+    width: 55%;
+}
+
+.ki-list-capacity-title {
+    width: 43%;
+}
+
+/*Information*/
+.ki-list-item {
+    display: flex;
+    width: 98%;
+    height: 24px;
+    align-content: center;
+    justify-content: space-between;
+}
+
+p.ki-list-name {
+    margin-left: 2%;
+    width: 50%;
+}
+
+.ki-list-capacity-container {
+    width: 28%;
+}
+
+.ki-list-capacity-container p, .ki-list-capacity-container input {
+    width: 30px;
+}
+
+.ki-list-capacity-container input {
+    font-size: 9pt;
+}
+
+ki-button-container {
+    width: 20%;
+}
+
+button.ki-list-edit {
+    height: fit-content;
+    margin: 2px;
+    padding: 4px;
+    text-align: center;
+}
+
+button.ki-list-edit:hover {
+    background-color: #3d405b;
+    color:#f4f1de;
+}
+
+button.ki-list-delete {
+    margin-left: 4%;
+    text-align: center;
+}
+
+.ki-list-grid p, .ki-list-grid button {
+    align-self: center;
+}
+
+.ki-list-item-container:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+/*WAREHOUSE INGREDIENTS*/
+.wi-list-panel {
+    grid-column: 4;
+    grid-row: 2;
+    width: 580px;
+    height: 450px;
+    margin: 0px;
+    border: 3pt solid #3d405f;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.wi-list-yellow-frame {
+    width: 530px;
+    height: 400px;
+    margin: 12px;
+    padding: 10px;
+    border: 2pt solid #f2cc8f;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.wi-list-yellow-frame h2 {
+    display: inline;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #3d405b;
+}
+
+.wi-list-yellow-frame hr {
+    margin-top: 8px;
+    border: 0.5pt solid #81b29a;
+    background-color: #81b29a
+}
+
+.wi-list-grid {
+    width: 515px;
+    height: 350px;
+    margin: 10px;
+    padding: 0px;
+    overflow-y: scroll;
+}
+
+.wi-list-grid-titles p {
+    font-weight: bold;
+    letter-spacing: 0.25pt;
+}
+
+.wi-list-grid p {
+    margin: 0;
+    color: #3d405b
+}
+
+.wi-list-grid button {
+    display: inline;
+    width: fit-content;
+    height: 12px;
+    margin: 0px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: #f4f1de;
+    font-size: 7pt; 
+    color: #3d405b;
+}
+
+/*Titles*/
+.wi-list-grid-titles {
+    display: flex;
+    margin-left: 2%;
+    width: 98%;
+    height: 20px;
+    flex-direction: row;
+}
+
+.wi-list-name-title {
+    width: 50%;
+}
+
+.wi-list-capacity-title {
+    width: 50%;
+}
+
+/*Information*/
+.wi-list-item {
+    display: flex;
+    width: 98%;
+    height: 20px;
+    flex-direction: row;
+}
+
+p.wi-list-name {
+    margin-left: 2%;
+    width: 50%;
+}
+
+p.wi-list-capacity {
+    width: 22%;
+}
+
+button.wi-list-edit {
+    width: 9%;
+    text-align: center;
+}
+
+button.wi-list-delete {
+    width: 12%;
+    margin-left: 4%;
+    text-align: center;
+}
+
+.wi-list-grid p, .wi-list-grid button {
+    align-self: center;
+}
+
+.wi-list-item-container:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+/*KI: Y scroll bar*/
+.ki-list-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.ki-list-grid::-webkit-scrollbar:increment, .ki-list-grid::-webkit-scrollbar:decrement {
+    display: none;
+}
+
+.ki-list-grid::-webkit-scrollbar-thumb {
+    background-color: #3d405b;
+    border-radius: 20px;
+}
+
+.ki-list-grid::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/*WI: Y scroll bar*/
+.wi-list-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.wi-list-grid::-webkit-scrollbar:increment, .wi-list-grid::-webkit-scrollbar:decrement {
+    display: none;
+}
+
+.wi-list-grid::-webkit-scrollbar-thumb {
+    background-color: #3d405b;
+    border-radius: 20px;
+}
+
+.wi-list-grid::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 10px;
+}

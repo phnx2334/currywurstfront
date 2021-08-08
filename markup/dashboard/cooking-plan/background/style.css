@@ -1,0 +1,51 @@
+* {
+    font-family: Cabin, Calibri, sans-serif;
+    font-size: 7pt;
+}
+
+/*Backgrounds and sections*/
+.white-background {
+    width: 405px;
+    height: 560px;
+    border: 3pt solid #e07a5f;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.inner-frame {
+    width: 350px;
+    height: 505px;
+    margin: 14px;
+    padding: 10px;
+    border: 2pt solid #f2cc8f;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.green-line {
+    width: 345px;
+    border: 0.5pt solid #81b29a;
+    background-color: #81b29a
+}
+
+/*All texts*/
+h2 {
+    display: inline;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #3d405b;
+}
+
+.white-background-description {
+    display: inline;
+    margin: 6px;
+    font-size: 9pt;
+    color: #3d405b;
+}
+
+h3 {
+    display: inline;
+    font-size: 11pt;
+    font-weight: bold; 
+    color: #3d405b;
+}

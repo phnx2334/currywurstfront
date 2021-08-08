@@ -1,0 +1,174 @@
+* {
+    font-family: Cabin, Calibri, sans-serif;
+    font-size: 7pt;
+}
+
+.cooks-list-panel {
+    width: 450px;
+    height: 335px;
+    margin: 0px;
+    border: 3pt solid #3d405f;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.cooks-list-yellow-frame {
+    width: 400px;
+    height: 285px;
+    margin: 12px;
+    padding: 10px;
+    border: 2pt solid #f2cc8f;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.cooks-list-yellow-frame h2 {
+    display: inline;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #3d405b;
+}
+
+.cooks-list-yellow-tag {
+    display: inline-block;
+    width: 80px;
+    height: 18px;
+    margin-left: 8px;
+    border-radius: 2px;
+    background-color: #f2cc8f;
+}
+
+.cookLnumber, .cookRnumber, .cookLname, .cookRname {
+    font-weight: bold;
+    letter-spacing: 0.25pt;
+}
+
+.cooks-list-yellow-tag p {
+    display: inline-block;
+    margin: 4px;
+    font-size: 7pt;
+    color: #3d405b;
+}
+
+.cooks-list-yellow-frame hr {
+    margin-top: 8px;
+    border: 0.5pt solid #81b29a;
+    background-color: #81b29a
+}
+
+.cooks-list-grid {
+    display: grid;
+    grid-template-columns: 15px 60px 34px 44px 60px 15px 60px 34px 44px;
+    grid-template-rows: repeat(13, 18px);
+    margin: 10px;
+    padding: 0px;
+}
+
+.cooks-list-grid p {
+    margin: 0;
+}
+
+.cooks-list-grid button {
+    display: inline;
+    width: fit-content;
+    height: 12px;
+    margin: 0px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #f4f1de;
+    font-size: 7pt; 
+    color: #3d405b;
+}
+
+/*List distribution*/
+/*columns*/
+.cookLnumber, .cook1number, .cook2number, .cook3number, .cook4number, .cook5number, .cook6number, .cook7number, .cook8number, .cook9number, .cook10number, .cook11number, .cook12number, .cook13number {
+    grid-column: 1;
+}
+
+.cookLname, #cook1name, #cook2name, #cook3name, #cook4name, #cook5name, #cook6name, #cook7name, #cook8name, #cook9name, #cook10name, #cook11name, #cook12name, #cook13name {
+    grid-column: 2;
+}
+
+.cook1edit, .cook2edit, .cook3edit, .cook4edit, .cook5edit, .cook6edit, .cook7edit, .cook8edit, .cook9edit, .cook10edit, .cook11edit, .cook12edit, .cook13edit {
+    grid-column: 3;
+}
+
+.cook1delete, .cook2delete, .cook3delete, .cook4delete, .cook5delete, .cook6delete, .cook7delete, .cook8delete, .cook9delete, .cook10delete, .cook11delete, .cook12delete, .cook13delete {
+    grid-column: 4;
+}
+
+.cookRnumber, .cook14number, .cook15number, .cook16number, .cook17number, .cook18number, .cook19number, .cook20number, .cook21number, .cook22number, .cook23number, .cook24number, .cook25number, .cook26number  {
+    grid-column: 6;
+}
+
+.cookRname, #cook14name, #cook15name, #cook16name, #cook17name, #cook18name, #cook19name, #cook20name, #cook21name, #cook22name, #cook23name, #cook24name, #cook25name, #cook26name {
+    grid-column: 7;
+}
+
+.cook14edit, .cook15edit, .cook16edit, .cook17edit, .cook18edit, .cook19edit, .cook20edit, .cook21edit, .cook22edit , .cook23edit , .cook24edit, .cook25edit , .cook26edit {
+    grid-column: 8;
+}
+
+.cook14delete, .cook15delete, .cook16delete, .cook17delete, .cook18delete, .cook19delete, .cook20delete, .cook21delete, .cook22delete, .cook23delete, .cook24delete, .cook25delete, .cook26delete {
+    grid-column: 9;
+}
+
+/*Rows*/
+.cookLnumber, .cookRnumber, .cookLname, .cookRname {
+    grid-row: 1;
+}
+
+.cook1number, #cook1name, .cook1edit, .cook1delete, .cook14number, #cook14name, .cook14edit, .cook14delete {
+    grid-row: 2;
+}
+
+.cook2number, #cook2name, .cook2edit, .cook2delete, .cook15number, #cook15name, .cook15edit, .cook15delete {
+    grid-row: 3;
+}
+
+.cook3number, #cook3name, .cook3edit, .cook3delete, .cook16number, #cook16name, .cook16edit, .cook16delete {
+    grid-row: 4;
+}
+
+.cook4number, #cook4name, .cook4edit, .cook4delete, .cook17number, #cook17name, .cook17edit, .cook17delete {
+    grid-row: 5;
+}
+
+.cook5number, #cook5name, .cook5edit, .cook5delete, .cook18number, #cook18name, .cook18edit, .cook18delete {
+    grid-row: 6;
+}
+
+.cook6number, #cook6name, .cook6edit, .cook6delete, .cook19number, #cook19name, .cook19edit, .cook19delete {
+    grid-row: 7;
+}
+
+.cook7number, #cook7name, .cook7edit, .cook7delete, .cook20number, #cook20name, .cook20edit, .cook20delete {
+    grid-row: 8;
+}
+
+.cook8number, #cook8name, .cook8edit, .cook8delete {
+    grid-row: 9;
+}
+
+.cook9number, #cook9name, .cook9edit, .cook9delete {
+    grid-row: 10;
+}
+
+.cook10number, #cook10name, .cook10edit, .cook10delete {
+    grid-row: 11;
+}
+
+.cook11number, #cook11name, .cook11edit, .cook11delete {
+    grid-row: 12;
+}
+
+.cook12number, #cook12name, .cook12edit, .cook12delete {
+    grid-row: 13;
+}
+
+.cook13number, #cook13name, .cook13edit, .cook13delete {
+    grid-row: 14;
+}

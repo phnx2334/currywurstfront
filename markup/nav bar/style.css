@@ -1,0 +1,60 @@
+* {
+    font-family: Cabin, Calibri, sans-serif;
+    font-size: 7pt;
+}
+
+.purple-bar {
+    display: grid;
+    grid-template-columns: 60px 100px auto repeat(2, 120px) 100px 140px 100px;
+    grid-template-rows: 28px 34px 28px;
+    width: 100vw;
+    height: 90px;
+    background-color: #3d405b;
+}
+
+.cw-logo {
+    grid-column: 2;
+    grid-row: 2;
+    height: 25px;
+}
+
+.purple-bar a {
+    grid-row: 2;
+}
+
+.dashboard-section {
+    grid-column: 4;
+}
+
+.employees-section {
+    grid-column: 5;
+}
+
+.recipes-section {
+    grid-column: 6;
+}
+
+.about-section {
+    grid-column: 7;
+}
+
+.section-active {
+    width: fit-content;
+    margin: 0px;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: #e07a5f;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.section-inactive {    
+    margin: 0px;
+    padding-top: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+}

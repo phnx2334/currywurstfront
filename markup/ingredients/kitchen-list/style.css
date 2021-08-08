@@ -1,0 +1,120 @@
+* {
+    font-family: Cabin, Calibri, sans-serif;
+    font-size: 7pt;
+}
+
+.ki-list-panel {
+    width: 500px;
+    height: 385px;
+    margin: 0px;
+    border: 3pt solid #3d405f;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.ki-list-yellow-frame {
+    width: 450px;
+    height: 335px;
+    margin: 12px;
+    padding: 10px;
+    border: 2pt solid #f2cc8f;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.ki-list-yellow-frame h2 {
+    display: inline;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #3d405b;
+}
+
+.ki-list-yellow-frame hr {
+    margin-top: 8px;
+    border: 0.5pt solid #81b29a;
+    background-color: #81b29a
+}
+
+.ki-list-grid {
+    width: 420px;
+    height: 234px;
+    margin: 10px;
+    padding: 0px;
+}
+
+.ki-list-grid-titles p {
+    font-weight: bold;
+    letter-spacing: 0.25pt;
+}
+
+.ki-list-grid p {
+    margin: 0;
+    color: #3d405b
+}
+
+.ki-list-grid button {
+    display: inline;
+    width: fit-content;
+    height: 12px;
+    margin: 0px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: #f4f1de;
+    font-size: 7pt; 
+    color: #3d405b;
+}
+
+/*Titles*/
+.ki-list-grid-titles {
+    display: flex;
+    margin-left: 2%;
+    width: 100%;
+    height: 20px;
+    flex-direction: row;
+}
+
+.ki-list-name-title {
+    width: 50%;
+}
+
+.ki-list-capacity-title {
+    width: 50%;
+}
+
+/*Information*/
+.ki-list-info {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    flex-direction: row;
+}
+
+p.ki-list-name {
+    margin-left: 2%;
+    width: 50%;
+}
+
+p.ki-list-capacity {
+    width: 22%;
+}
+
+button.ki-list-edit {
+    width: 9%;
+    text-align: center;
+}
+
+button.ki-list-delete {
+    width: 12%;
+    margin-left: 4%;
+    text-align: center;
+}
+
+.ki-list-grid p, .ki-list-grid button {
+    align-self: center;
+}
+
+.ki-list-info:nth-child(odd) {
+    background-color: #f4f4f4;
+}

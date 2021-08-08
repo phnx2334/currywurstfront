@@ -1,0 +1,50 @@
+COOKS CHILD COMPONENT HAS:
+
+<div>
+     <div>
+        {nameField}
+        <button onClick={() => props.delete(props.id)}>Delete</button>
+        <button onClick={() => onClickModify()}>Modify</button>
+     </div>
+    </div>
+
+
+WORKERS CHILD COMPONENT HAS:
+ <div>
+     <div>
+        {nameField}
+        {capacityField}
+        <button onClick={() => props.delete(props.id)}>Delete</button>
+        <button onClick={() => onClickModify()}>Modify</button>
+     </div>
+    </div>
+
+EMPLOYEES PARENT COMPONENT HAS:
+
+<div>
+     <h1>Employees</h1>
+
+     <div>
+        <h2>Worker</h2>
+        <input type="text" placeholder="Worker name" onChange={getWorkerName}/>
+        <input type="number" placeholder="Worker capacity" onChange={getWorkerCapacity}/>
+        <button onClick={() => addNewWorker()}>Add Worker to the Warehouse!</button>
+     </div>
+      <hr></hr>
+      <hr></hr>
+     <div>
+        <h2>Cook</h2>
+        <input type="text" placeholder="Cook name" onChange={getCookName} value={cookInfo}/>
+        <button onClick={() => addNewCook()}>Add Cook to the kitchen!</button>
+     </div>
+
+     <div>
+       <h2>Workers List</h2>
+       {renderWorkers()}
+     </div>
+
+     <div>
+       <h2>Cooks List</h2>
+       {renderCooks()}
+     </div>
+    </div>

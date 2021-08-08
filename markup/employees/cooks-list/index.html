@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>cooks-list</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+        <link rel="stylesheet" href="style.css" type="text/css" media=screen>
+    </head>
+    <body>
+        <div class="cooks-list-panel">
+            <div class="cooks-list-yellow-frame">
+                <h2>Cook's list</h2>
+                <div class="cooks-list-yellow-tag">
+                    <p>Spots available: </p>
+                    <p id="number-of-open-spots-for-cooks"></p>
+                </div>
+                <hr class="green-line">
+                <div class="cooks-list-grid">
+                    <!--Cooks numbers-->
+                    <p class="cookLnumber">n.</p>
+                    <p class="cook1number">1.</p>
+                    <p class="cook2number">2.</p>
+                    <p class="cook3number">3.</p>
+                    <p class="cook4number">4.</p>
+                    <p class="cook5number">5.</p>
+
+                    <p class="cookRnumber">n.</p>
+                    <p class="cook14number">14.</p>
+
+                    <!--Cooks names-->
+                    <p class="cookLname">Name</p>
+                    <p id="cook1name">Anna</p>
+                    <p id="cook2name">Anna</p>
+                    <p id="cook3name">Anna</p>
+                    <p id="cook4name">Anna</p>
+                    <p id="cook5name">Anna</p>
+
+                    <p class="cookRname">Name</p>
+                    <p id="cook14name">Anna</p>
+
+                    <!--Cooks edit buttons-->
+                    <button class="cook1edit">Edit</button> <!-- onClick={() => onClickModify()} -->
+                    <button class="cook2edit">Edit</button> <!-- onClick={() => onClickModify()} -->
+                    <button class="cook3edit">Edit</button> <!-- onClick={() => onClickModify()} -->
+                    <button class="cook4edit">Edit</button> <!-- onClick={() => onClickModify()} -->
+                    <button class="cook5edit">Edit</button> <!-- onClick={() => onClickModify()} -->
+                    <button class="cook14edit">Edit</button> <!-- onClick={() => onClickModify()} -->
+
+                    <!--Cooks delete buttons-->
+                    <button class="cook1delete">Delete</button> <!-- onClick={() => props.delete(props.id)} -->
+                    <button class="cook2delete">Delete</button> <!-- onClick={() => props.delete(props.id)} -->
+                    <button class="cook3delete">Delete</button> <!-- onClick={() => props.delete(props.id)} -->
+                    <button class="cook4delete">Delete</button> <!-- onClick={() => props.delete(props.id)} -->
+                    <button class="cook5delete">Delete</button> <!-- onClick={() => props.delete(props.id)} -->                 
+                    <button class="cook14delete">Delete</button> <!-- onClick={() => props.delete(props.id)} -->               
+               </div>
+            </div>
+        </div>
+    </body>
+</html>

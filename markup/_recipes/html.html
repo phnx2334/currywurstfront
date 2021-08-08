@@ -1,0 +1,72 @@
+RECIPE ITEM CHILD COMPONENT HAS:  
+
+<div class="menu-item">
+  <span class="menu-item-header">
+    <p class="menu-item-title">{props.name}</p>
+  </span>
+  <span class="quantity-input">
+    <button class='quantity-input-button less'
+    onClick={() =>onViewIngredientsClick()}>View Recipe</button>
+    <button class='quantity-input-button less'>Delete Recipe</button>
+  </span>
+  <span>
+  </span>
+  <span class="dish-prep-time">
+    <p class="dish-prep-time-intro">Prepping time: </p>            
+    <p id="actual-dish-prep-time">{props.ttc}</p>
+  </span>
+  <hr class="beige-line"></hr>
+</div>
+
+
+THE RECIPE PARENT COMPONENT HAS:
+
+<section class="recipe-section">
+  <div class="recipe-container">
+    <h2>Available Recipes</h2>
+
+    <p>Recipes list</p>
+
+
+    <button>Add a new recipe</button>
+
+    <div class="New Recipe">
+     <span>
+      <label>Recipe name</label>
+      <input id="recipeName" type="text" onChange={(e)></input>
+    </span>
+
+    <span>
+      <label>Time to cook</label>
+      <input id="ttc" type="number" onChange={(e)></input>
+    </span>
+
+    <label>Is it a pre-made product?</label>
+    <select id="preMade" name="preMade"  onChange={(e)>
+      <option value="No">No</option>
+      <option value="Yes">Yes</option>
+    </select>
+
+
+    <label>Type of product</label>
+    <select id="productType" name="productType"  onChange={(e)>
+      <option value="Main Dish">Main Dish</option>
+      <option value="Dessert">Dessert</option>
+      <option value="Drink">Drink</option>
+    </select>
+
+    <span>
+      <label>Price</label>
+      <input id="price" type="number" onChange={(e)></input>
+    </span>
+
+
+    <div>
+      <h3>Ingredients list</h3>
+      <button onClick={() => onAddIngredientClickHandler()}>Add ingredient!</button>
+    </div>
+    <button onClick={()=>onAddRecipeClickHandler()}>Add recipe!</button>
+  </div>
+
+</div> 
+</section>

@@ -1,0 +1,43 @@
+* {
+    font-family: Cabin, Calibri, sans-serif;
+    font-size: 8pt;
+    color: #3d405b;
+}
+
+.orange-background {
+    width: 405px;
+    height: 560px;
+    border: 3pt solid #e07a5f;
+    border-radius: 12px;
+    background-color: #f2cc8f;
+}
+
+.inner-frame {
+    width: 350px;
+    height: 505px;
+    margin: 14px;
+    padding: 10px;
+    border: 2pt solid #f4f1de;
+    border-radius: 10px;
+    background-color: #f2cc8f;
+}
+
+h2 {
+    display: inline;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #3d405b;
+}
+
+.orange-background-description {
+    display: inline;
+    margin: 6px;
+    font-size: 9pt;
+    color: #3d405b;
+}
+
+.orange-line {
+    width: 345px;
+    border: 0.5pt solid #e07a5f;
+    background-color: #e07a5f;
+}

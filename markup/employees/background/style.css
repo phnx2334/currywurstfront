@@ -1,0 +1,57 @@
+* {
+    font-family: Cabin, Calibri, sans-serif;
+    font-size: 7pt;
+}
+
+/*Header*/
+.employees-section-header {
+    display: grid;
+    grid-template-columns: 20px 36px auto;
+    grid-template-rows: 20px 30px 10px;
+    width: 90vw;
+    border-radius: 15px 15px 0px 0px;
+    background-color: #3d405f;
+}
+
+.employees-section-header img {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 2px;
+    height: 30px;
+}
+ 
+.employees-section-header div {
+    grid-column: 3;
+    grid-row: 2;
+    margin-left: 8px;
+    padding: 8px;
+    border-radius: 6px;
+    width: 78px;
+    height: 20px;
+    background-color: #e07a5f;
+}
+
+.employees-section-header h1 {
+    margin: 0px;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/*Panel*/
+.employees-section-background {
+    display: grid;
+    grid-template-columns: 4vw 35vw 2vw 45vw 4vw;
+    grid-template-rows: 1vw 5vw 2vw auto 4vw;
+    width: 90vw;
+    height: 65vh;
+    border-radius: 0px 0px 15px 15px;
+    background-color: #3d405f;
+}
+
+.test {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-color: aquamarine;
+}

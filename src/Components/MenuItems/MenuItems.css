@@ -1,0 +1,32 @@
+.order-panel-entire-menu-container {
+    height: 350px;
+    padding: 0 10px 10px 10px;
+    background-color: #f2cc8f;
+}
+
+.order-panel-entire-menu {
+    height: 340px;
+    margin: 0;
+    padding: 0;
+    background-color: #f2cc8f;
+    overflow-y: auto;
+}
+
+/*Y scroll bar*/
+.order-panel-entire-menu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.order-panel-entire-menu::-webkit-scrollbar:increment, .entire-menu::-webkit-scrollbar:decrement {
+    display: none;
+}
+
+.order-panel-entire-menu::-webkit-scrollbar-thumb {
+    background-color: #3d405b;
+    border-radius: 20px;
+}
+
+.order-panel-entire-menu::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 10px;
+}

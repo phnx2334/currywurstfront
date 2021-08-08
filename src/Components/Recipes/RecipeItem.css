@@ -1,0 +1,273 @@
+/*RECIPE LIST PANEL*/
+section.recipe-list {
+    grid-row: 2;
+    width: 875px;
+    height: 462px;
+    padding: 0px;
+    border: 3pt solid #3d405b;
+    border-radius: 12px;
+    background: white;
+}
+
+.list-container {
+    width: 805px;
+    height: 392px;
+    margin: 14px;
+    padding: 2%;
+    border: #f2cc8f 3px solid;
+    border-radius: 10px;
+}
+
+.list-container h2 {
+    display: inline-block;
+    margin: 2px;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #3d405b;
+}
+
+.recipes-space {
+    width: 800px;
+    height: 365px;
+    overflow-y: scroll;
+}
+
+.list-items {
+    display: flex;
+    width: 98%;
+    padding: 5px;
+    align-items: center;
+}
+
+.list-items p:nth-child(1) {
+    width: 5%;
+}
+
+.list-items p:nth-child(2) {
+    width: 65%;
+}
+
+.buttons-list-items {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: flex-end;
+}
+
+.buttons-list-items button {
+    background: #f4f1de;
+    padding: 2px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.buttons-list-items button:nth-child(2) {
+    margin-left: 2%;
+}
+
+.recipe-list-wrapper:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+
+.edit-recipe:hover {
+    background-color: #3d405b;
+    color: #f4f1de;
+}
+
+.delete-recipe:hover {
+    background-color: #e07a5f;
+    color: #f4f1de;
+}
+
+
+
+/*Y scroll bar*/
+.recipes-space::-webkit-scrollbar {
+    width: 8px;
+}
+
+.recipes-space::-webkit-scrollbar:increment, .entire-menu::-webkit-scrollbar:decrement {
+    display: none;
+}
+
+.recipes-space::-webkit-scrollbar-thumb {
+    background-color: #3d405b;
+    border-radius: 20px;
+}
+
+.recipes-space::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+
+
+/*VIEW RECIPE PANEL*/
+.view-recipe-panel {
+    width: 380px;
+    height: fit-content;
+    margin-left: 2%;
+    border: 3pt solid #f4f4f4;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.view-recipe-inner-frame {
+    width: 322px;
+    height: fit-content;
+    margin: 5px;
+    padding: 10px;
+    border: 2pt solid #ffffff;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.view-recipe-inner-frame p {
+    display: block;
+    width: 100% !important;
+    margin: 0px;
+}
+
+.view-recipe-inner-frame h2 {
+    display: block;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #3d405b;
+}
+
+.view-recipe-green-line {
+    border: 0.5pt solid #81b29a;
+    background-color: #81b29a
+}
+
+/*VIEW RECIPE PANEL: Form header*/
+.view-recipe-form-header {
+    display: flex;
+    width: 94%;
+    height: 100%;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: #f4f1de;
+    justify-content: space-between;
+} 
+
+.view-recipe-time-span-title {
+    width: 40%;
+    height: 100%;
+    margin-top: 2px;
+}
+
+.view-recipe-time-span-title p {
+    display: inline;
+    height: 12px;
+    margin-left: 5px;
+}
+
+.view-recipe-time-span-number {
+    width: 20%;
+}
+
+.view-recipe-time-span-number p {
+    text-align: center;
+    display: inline;
+    margin-top: 2px;
+    height: 12px;
+}
+
+.view-recipe-time-span-number input {
+    width: 30px;
+    font-size: 9pt !important;
+}
+
+.hide-time-quantity {
+    display: none !important;
+}
+
+.ttcModifyButton {
+    width: 35%;
+    background-color: #3d405b;
+    color: #f4f1de;
+    padding: 2px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.ttcModifyButton:hover {
+    background-color: #81b29a !important;
+    color: #ffffff;
+}
+
+.view-recipe-yellow-line {
+    grid-column: 1/5;
+    width: 100%;
+    border: 0.5pt solid #f2cc8f;
+    background-color: #f2cc8f;
+}
+
+/*VIEW RECIPE PANEL: Form body*/
+.view-recipe-form-body {
+    width: 94%;
+    height: auto;
+    margin: 0;
+    padding: 1px 10px 10px 10px;
+    background-color: #f4f1de;
+} 
+
+.view-recipe-form-header input, .view-recipe-form-header select {
+    border: none;
+    padding: 3px;
+    box-shadow: none;
+    background-color: #ffffff;
+    font-size: 9pt;
+    color: #808080;
+}
+
+.view-recipe-form-body p {
+    margin: 0;
+    color: #3d405b;
+}
+
+.view-recipe-form-body h3 {
+    display: block;
+    margin-bottom: 10px;
+    color: #3d405b;
+}
+
+.ingredient-to-edit-container {
+    margin: 5px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.ingredient-name-to-edit {
+    display: inline;
+}
+
+.ingredient-qty-to-edit-container {
+    width: 30% !important;
+}
+
+.ingredient-qty-to-edit {
+    display: inline;
+}
+
+input.ingredient-qty-to-edit  {
+    font-size: 9pt;
+}
+
+.modify-ingredient-qty-button {
+    background: #3d405b;
+    color: #f4f1de;
+    margin-left: 3px;
+    padding: 2px 10px;
+    border: none;
+    border-radius: 3px;  
+}
+
+
+.modify-ingredient-qty-button:hover {
+    background-color: #81b29a !important;
+    color: #ffffff;
+}
